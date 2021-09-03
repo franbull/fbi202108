@@ -14,14 +14,8 @@ export default function Home() {
           Francis Bull
         </h1>
 
-        <p className="description">
-          Is a software developer
-        </p>
-
         <div className="grid">
-          <Link href="/posts/test" className="card">howdy</Link>
-          <div>rowdy</div>
-          <div>cowdy</div>
+          <a href="/resume.html" className="card">Resume</a>
         </div>
       </main>
 
