@@ -1,6 +1,16 @@
+import React from 'react';
 import Head from 'next/head'
 import Link from 'next/link'
 
+const Wave = () => {
+  const [show, setShow] = React.useState(false);
+  const onClick = () => setShow(!show);
+  return (
+    <div className="grid" onClick={onClick}>
+      { show ? <img src="/wave.gif" className="card"/> : '👋' }
+    </div>
+  );
+};
 export default function Home() {
   return (
     <div className="container">
@@ -16,6 +26,9 @@ export default function Home() {
 
         <div className="grid">
           <a href="/resume.html" className="card">Resume</a>
+        </div>
+        <div className="grid">
+          <Wave/>
         </div>
       </main>
 
